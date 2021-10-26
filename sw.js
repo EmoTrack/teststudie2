@@ -11,11 +11,7 @@ self.addEventListener('install', function(event) {
   })());
   
   self.skipWaiting();
-  
-let params = new URLSearchParams(document.location.search.substring(1));
-let key = params.get("serial"); 
-
-localStorage.setItem('serial', key);
+ 
 });
 
 self.addEventListener('activate', (event) => {
