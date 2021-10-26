@@ -30,4 +30,4 @@ document.write("<p>Link: " + "EmoTrackfghj".link(link1) + "</p>");
 
 }
 
-if (first = 123) fun()
+if (first == 123) fun()
