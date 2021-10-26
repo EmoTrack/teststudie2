@@ -7,8 +7,8 @@ if ('serviceWorker' in navigator) {
 let params = new URLSearchParams(document.location.search.substring(1));
 let key = params.get("serial"); 
 
-alert(key);
+localStorage.setItem(serial, key)
 
-
-  
+let serial = localStorage.getItem(serial)
+alter(serial)
 
