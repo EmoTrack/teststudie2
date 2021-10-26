@@ -1,7 +1,7 @@
 
 /* Only register a service worker if it's supported */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+  navigator.serviceWorker.register('/EmoTrack/sw.js');
 }
 
 // Detects if device is on iOS 
