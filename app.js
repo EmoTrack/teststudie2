@@ -6,10 +6,7 @@ if ('serviceWorker' in navigator) {
 
 
 var iosPrompt = document.getElementById("ios-prompt");
-function showIosInstall() {
-  iosPrompt.style.display = "none";
- }
-showIosInstall();
+iosPrompt.style.display = "none";
 
   
 
