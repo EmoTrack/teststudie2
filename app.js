@@ -9,5 +9,5 @@ let key = params.get("serial");
 
 localStorage.setItem('serial', key)
 
-altert(localStorage.getItem('serial'))
+alert(localStorage.getItem('serial'))
 
