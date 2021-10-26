@@ -5,8 +5,6 @@ if ('serviceWorker' in navigator) {
 }
 
 
-var iosPrompt = document.getElementById("ios");
-iosPrompt.style.display = "hidden";
 
   
 
