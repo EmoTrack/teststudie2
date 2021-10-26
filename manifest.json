@@ -2,19 +2,19 @@
     "name": "EmoTrack",
     "short_name": "EmoTrack",
     "lang": "de-DE",
-    "start_url": "EmoTrack/index.html",
+    "start_url": "https://emotrack.github.io/EmoTrack/",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
     "scope": "https://soscisurvey.de/",
     "icons": [
       {
-        "src": "EmoTrack/image.png",
+        "src": "image.png",
         "sizes": "512x512",
         "type": "image\/png"
       },
         {
-        "src": "EmoTrack/image.png",
+        "src": "image.png",
         "sizes": "192x192",
         "type": "image\/png"
       } 
