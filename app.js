@@ -33,8 +33,5 @@ document.write("<table>
                <tr><td>"+"EmoTrack".link(link1)+"</td></tr>
                <tr><td>"+"eatMotion".link(link2)+"</td></tr>
                <tr><td>"+"EMI".link(link2)+"</td></tr>
-              </table> 
-    <div class="ios-prompt">
-    <p>To install this Web App in your iPhone/iPad press <img src="https://svgshare.com/i/AFm.svg" style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;"> and then Add to Home Screen.
-    <img src="https://svgshare.com/i/AEL.svg" style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;"></p>
-    </div>");
+              </table>");
+  
