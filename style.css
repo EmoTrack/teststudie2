@@ -1,3 +1,19 @@
+.ios-prompt {
+        background-color: #fcfcfc;
+        border: 1px solid #666;
+        display: none;
+        padding: 0.8rem 1rem 0 0.5rem;
+        text-decoration: none;
+        font-size: 16px;
+        color: #555;
+
+        position: absolute;
+        margin: 0 auto 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+      }
+
 body {
   background-color:#0B2F3A;
   text-align: center;
