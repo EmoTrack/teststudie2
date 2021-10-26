@@ -14,7 +14,7 @@ let key = params.get("serial");
 localStorage.setItem('serial', key);
 }
 
-if (first == 123) fun()
+if (first == 123) fun();
 
 let serial = localStorage.getItem('serial');
 serial = String(serial);
@@ -26,8 +26,8 @@ let link2 = "https://www.soscisurvey.de/demotrack/?q=eat&s=";
 let link3 = "https://www.soscisurvey.de/demotrack/?q=emi&s=";
 
 link1 = link1+serial;
-link2 = link1+serial;
-link3 = link1+serial;   
+link2 = link2+serial;
+link3 = link3+serial;   
      
-document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link2)+"</td></tr></table>");
+document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
