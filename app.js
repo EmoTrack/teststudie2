@@ -5,8 +5,8 @@ if ('serviceWorker' in navigator) {
 }
 
 function showIosInstall() {
-        let iosPrompt = document.querySelector(".ios-prompt");
-        iosPrompt.style.display = "none";
+  var iosPrompt = document.getElementById("ios-prompt");
+  iosPrompt.style.display = "none";
         });
       }
         showIosInstall();
