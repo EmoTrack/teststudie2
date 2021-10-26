@@ -11,11 +11,11 @@ localStorage.setItem('serial', key);
 
 let serial = localStorage.getItem('serial');
 
-let link1 = "www.example.de/?s=";
+let link1 = "https://www.example.de/?s=";
 
-let link2 = "www.example.de/?s=";
+let link2 = "https://www.example.de/?s=";
 
-let link3 = "www.example.de/?s=";
+let link3 = "https://www.example.de/?s=";
 
 serial = String(serial);
 
