@@ -4,16 +4,17 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
 
-let params = new URLSearchParams(document.location.search.substring(1));
-let key = params.get("serial"); 
+let link1 = "www.example.de/?s=";
 
-localStorage.setItem('serial', key);
+let link2 = "www.example.de/?s=";
 
-let serial = localStorage.getItem('serial');
+let link3 = "www.example.de/?s=";
 
-let serial  =serial*2;
+serial = String(serial);
 
-alert(serial);
+link1 = link1+serial;
+
+alert(link1);
 
 
 
