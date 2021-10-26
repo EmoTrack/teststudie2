@@ -9,8 +9,7 @@ function showIosInstall() {
         iosPrompt.style.display = "block";
         });
       }
-    
-      
+        showIosInstall();
 
   
 
