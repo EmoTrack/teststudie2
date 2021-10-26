@@ -26,7 +26,7 @@ serial = String(serial);
 
 link1 = link1+serial;       
      
-document.write("<p>Link: " + "EmoTrack".link(link1) + "</p>");
+document.write("<p>Link: " + "EmoTrackfghj".link(link1) + "</p>");
 
 }
 
