@@ -5,9 +5,16 @@ body {
 }
 
 .ios-prompt {
-        color: #FFFFFF;
+    color: #FFFFFF;
     text-align: center;
       }
+
+p {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 12px;
+}
 
 a {
   font-family: sans-serif;
