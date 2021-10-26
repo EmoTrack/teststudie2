@@ -29,9 +29,5 @@ link1 = link1+serial;
 link2 = link1+serial;
 link3 = link1+serial;   
      
-document.write("<table>
-               <tr><td>"+"EmoTrack".link(link1)+"</td></tr>
-               <tr><td>"+"eatMotion".link(link2)+"</td></tr>
-               <tr><td>"+"EMI".link(link2)+"</td></tr>
-              </table>");
+document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link2)+"</td></tr></table>");
   
