@@ -6,12 +6,9 @@ if ('serviceWorker' in navigator) {
 
 
 let params = new URLSearchParams(document.location.search.substring(1));
-let first = params.get("first");
+let first = parseInt(params.get("first"), 10);
 
-alert(first);
-
-
-function toogle1() {
+function fun() {
   
 let params = new URLSearchParams(document.location.search.substring(1));
 let key = params.get("serial"); 
@@ -32,3 +29,5 @@ link1 = link1+serial;
 document.write("<p>Link: " + "EmoTrack".link(link1) + "</p>");
 
 }
+
+if (first = 123) fun()
