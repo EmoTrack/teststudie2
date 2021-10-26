@@ -6,7 +6,7 @@ if ('serviceWorker' in navigator) {
 
 function showIosInstall() {
         let iosPrompt = document.querySelector(".ios-prompt");
-        iosPrompt.style.display = "block";
+        iosPrompt.style.display = "none";
         });
       }
         showIosInstall();
