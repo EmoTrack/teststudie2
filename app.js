@@ -4,12 +4,12 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
 
+
+var iosPrompt = document.getElementById("ios-prompt");
 function showIosInstall() {
-  var iosPrompt = document.getElementById("ios-prompt");
   iosPrompt.style.display = "none";
-        });
-      }
-        showIosInstall();
+ }
+showIosInstall();
 
   
 
