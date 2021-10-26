@@ -19,15 +19,16 @@ if (first == 123) fun();
 let serial = localStorage.getItem('serial');
 serial = String(serial);
 
-let link1 = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s=";
+let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
-let link2 = "https://www.soscisurvey.de/demotrack/?q=eat&s=";
+let txt  = "&r=event"
 
-let link3 = "https://www.soscisurvey.de/demotrack/?q=emi&s=";
+let link2 = "https://www.soscisurvey.de/demotrack/?q=eat";
 
-link1 = link1+serial;
-link2 = link2+serial;
-link3 = link3+serial;   
+let link3 = "https://www.soscisurvey.de/demotrack/?q=emi";
+
+link1 = link1+serial+txt;
+  
      
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
