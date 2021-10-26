@@ -4,4 +4,15 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
 
+function showIosInstall() {
+        let iosPrompt = document.querySelector(".ios-prompt");
+        iosPrompt.style.display = "block";
+        iosPrompt.addEventListener("click", () => {
+          iosPrompt.style.display = "none";
+        });
+      }
+    
+      
+
+  
 
