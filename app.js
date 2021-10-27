@@ -16,7 +16,6 @@ localStorage.setItem('serial', key);
 
 //if (first == 123) fun();
 
-let params = new URLSearchParams(document.location.search.substring(1));
 let key = params.get("serial"); 
 
 //let serial = localStorage.getItem('serial');
