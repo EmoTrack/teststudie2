@@ -26,7 +26,7 @@ let serial = String(key);
 
 let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
-let txt  = "&r=event"
+let txt  = "&r=event";
 
 let link2 = "https://www.soscisurvey.de/demotrack/?q=eat";
 
