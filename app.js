@@ -14,12 +14,10 @@ let key = params1.get("serial");
 localStorage.setItem('serial', key);
 }
 
-//if (first == 123) fun();
+if (first == 123) fun();
 
-let key = params.get("serial"); 
-
-//let serial = localStorage.getItem('serial');
-//serial = String(serial);
+let serial = localStorage.getItem('serial');
+serial = String(serial);
 
 let serial = String(key);
 
