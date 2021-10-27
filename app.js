@@ -14,10 +14,15 @@ let key = params.get("serial");
 localStorage.setItem('serial', key);
 }
 
-if (first == 123) fun();
+//if (first == 123) fun();
 
-let serial = localStorage.getItem('serial');
-serial = String(serial);
+let params = new URLSearchParams(document.location.search.substring(1));
+let key = params.get("serial"); 
+
+//let serial = localStorage.getItem('serial');
+//serial = String(serial);
+
+let serial = String(key);
 
 let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
