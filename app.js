@@ -9,8 +9,8 @@ let first = parseInt(params.get("first"), 10);
 
 function fun() {
   
-let params = new URLSearchParams(document.location.search.substring(1));
-let key = params.get("serial"); 
+let params1 = new URLSearchParams(document.location.search.substring(1));
+let key = params1.get("serial"); 
 localStorage.setItem('serial', key);
 }
 
