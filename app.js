@@ -1,7 +1,5 @@
-const cacheAvailable = 'caches' in self;
-const cache = caches.open('id');
-const stringResponse = new Response('Hello world');
-cache.add(stringResponse);
+
+
 
 /* Only register a service worker if it's supported */
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
