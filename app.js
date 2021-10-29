@@ -38,11 +38,12 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
-if('caches' in window) {
+const l = console.log
+    if ('caches' in window) {
         caches.open('cache_name').then((cache) => {
-            // ...
+            l(cache)
         }).catch((err) => {
-            // ...
+            l(err)
         })
     }
 
