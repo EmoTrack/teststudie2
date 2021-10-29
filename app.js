@@ -1,5 +1,5 @@
+const cacheAvailable = 'caches' in self;
 const stringResponse = new Response('Hello world');
-
 cache.add(stringResponse);
 
 /* Only register a service worker if it's supported */
