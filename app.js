@@ -35,6 +35,6 @@ var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator
  console.log(isInStandaloneMode);
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-if (isIOS && !isInStandaloneMode()) {
+if (isIOS && !isInStandaloneMode) {
   document.getElementById("ios-prompt").style.display = "block"; 
 }
