@@ -42,10 +42,11 @@ let params2 = new URLSearchParams(document.location.search.substring(1));
 let key1 = params2.get("serial");
 const SHARED_DATA_ENDPOINT = '/token';
 //fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(key1)});
-  console.log(key1);
+key1 = String(key1);
+console.log(key1);
 }
 
-if (isIOS && (first != 123)) {
+if (isIOS && isInStandaloneMode) {
 fetch(SHARED_DATA_ENDPOINT).then(response => response.json()).then(data => {
      console.log('Got', data, 'from cache');
      link1 = link1+response+txt;
