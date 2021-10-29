@@ -31,9 +31,10 @@ link1 = link1+serial+txt;
   
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
-const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
+ console.log(isInStandaloneMode);
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-if (isIOS() && !isInStandaloneMode()) {
+if (isIOS && !isInStandaloneMode()) {
   document.getElementById("ios-prompt").style.display = "block"; 
 }
