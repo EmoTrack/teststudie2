@@ -1,5 +1,5 @@
 const cacheAvailable = 'caches' in self;
-const cache = await caches.open('id');
+const cache = caches.open('id');
 const stringResponse = new Response('Hello world');
 cache.add(stringResponse);
 
