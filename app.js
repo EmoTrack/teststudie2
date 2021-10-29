@@ -37,10 +37,10 @@ var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
-const l = 1;
+const l = console.log
     if ('caches' in window) {
         caches.open('cache_name').then((cache) => {
-            (cache)
+            l(cache)
         }).catch((err) => {
             l(err)
         })
