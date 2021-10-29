@@ -19,8 +19,6 @@ if (first == 123) fun();
 let serial = localStorage.getItem('serial');
 serial = String(serial);
 
-let serial = String(key);
-
 let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
 let txt  = "&r=event";
