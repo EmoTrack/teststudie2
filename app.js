@@ -1,3 +1,11 @@
+if('caches' in window) {
+        caches.open('cache_name').then((cache) => {
+            // ...
+        }).catch((err) => {
+            // ...
+        })
+    }
+
 
 /* Only register a service worker if it's supported */
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
@@ -37,13 +45,6 @@ var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
-const l = console.log
-    if ('caches' in window) {
-        caches.open('cache_name').then((cache) => {
-            l(cache)
-        }).catch((err) => {
-            l(err)
-        })
-    }
+
 
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
