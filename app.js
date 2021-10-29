@@ -31,11 +31,9 @@ link1 = link1+serial+txt;
   
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
-document.getElementById("ios-prompt").style.display = "block"; 
-
 const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 if (isIOS() && !isInStandaloneMode()) {
-  this.setState({ showInstallMessage: true });
+  document.getElementById("ios-prompt").style.display = "block"; 
 }
