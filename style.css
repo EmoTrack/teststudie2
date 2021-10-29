@@ -4,12 +4,6 @@ body {
   text-align: center;
 }
 
-#ios-prompt {
-    color: #FFFFFF;
-    text-align: center;
-  display: none;
-      }
-
 p {
   font-family: sans-serif;
   color: #FFFFFF;
@@ -52,3 +46,9 @@ html,
   margin: auto;
   width: 100%;
 }
+
+#ios-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+      }
