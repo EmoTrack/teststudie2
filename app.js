@@ -1,3 +1,7 @@
+const stringResponse = new Response('Hello world');
+
+cache.add(stringResponse);
+
 /* Only register a service worker if it's supported */
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
@@ -36,6 +40,5 @@ var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
-
 
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
