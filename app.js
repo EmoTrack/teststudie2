@@ -33,4 +33,9 @@ document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"ea
   
 document.getElementById("ios-prompt").style.display = "block"; 
 
-
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (isIOS) {
+  console.log('This is a IOS device');
+} else {
+  console.log('This is Not a IOS device');
+}
