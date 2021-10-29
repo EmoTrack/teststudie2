@@ -1,11 +1,9 @@
 
 /* Only register a service worker if it's supported */
-//var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var isIOS = new Boolean;
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 if ('serviceWorker' in navigator) {
-  if (!isIOS) {navigator.serviceWorker.register('sw.js');}
-  if (isIOS) {navigator.serviceWorker.register('sw_apple.js');}
+navigator.serviceWorker.register('sw.js');
 
 }
 
@@ -38,19 +36,6 @@ var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator
 
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
-let params2 = new URLSearchParams(document.location.search.substring(1));
-let key1 = params2.get("serial");
-const SHARED_DATA_ENDPOINT = '/token';
-key1 = String(key1);
-console.log(key1);
-fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(key1)});
-}
-
-if (isIOS && isInStandaloneMode) {
-fetch(SHARED_DATA_ENDPOINT).then(response => response.json()).then(data => {
-     console.log('Got', data, 'from cache');
-     link1 = link1+response+txt;
-});
 }
 
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
