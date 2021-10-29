@@ -4,7 +4,7 @@ body {
   text-align: center;
 }
 
-#ios-prompt {
+.ios-prompt {
     color: #FFFFFF;
     text-align: center;
   display: none;
