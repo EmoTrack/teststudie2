@@ -1,12 +1,12 @@
 const CACHE_NAME1 = "auth";
-const TOKEN_KEY1 = "token";
-const FAKE_TOKEN1 = "sRKWQu6hCJgR25lslcf5s12FFVau0ugi";
+const TOKEN_KEY = "token";
+const FAKE_TOKEN = "sRKWQu6hCJgR25lslcf5s12FFVau0ugi";
 
 const FAKE_ENDPOINT = "/fake-endpoint";
 
 const saveToken = async (token: string) => {
   try {
-    const cache = await caches.open(CACHE_NAME);
+    const cache = await caches.open(CACHE_NAME1);
     const responseBody = JSON.stringify({
       [TOKEN_KEY]: token
     });
@@ -22,7 +22,7 @@ const saveToken = async (token: string) => {
 
 const getToken = async () => {
   try {
-    const cache = await caches.open(CACHE_NAME);
+    const cache = await caches.open(CACHE_NAME1);
     const response = await cache.match(FAKE_ENDPOINT);
 
     if (!response) {
