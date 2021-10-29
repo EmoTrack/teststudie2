@@ -36,8 +36,8 @@ link1 = link1+serial+txt;
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
 var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
- console.log(isInStandaloneMode);
-
+var check ('123' in first);
+console.log(check);
 if (isIOS && !isInStandaloneMode) {
   document.getElementById("ios-prompt").style.display = "block"; 
 }
