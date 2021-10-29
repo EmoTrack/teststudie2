@@ -1,5 +1,6 @@
 const SHARED_DATA_ENDPOINT = '/token';
 
+
 // see: https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim
 self.addEventListener('activate', event => {
   event.waitUntil(clients.claim());
