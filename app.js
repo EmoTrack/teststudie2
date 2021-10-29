@@ -1,7 +1,11 @@
 
 /* Only register a service worker if it's supported */
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+  if (!isIOS) {navigator.serviceWorker.register('sw.js');
+  if (isIOS) {navigator.serviceWorker.register('sw_apple.js');
+
 }
 
 let params = new URLSearchParams(document.location.search.substring(1));
@@ -33,7 +37,6 @@ document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"ea
   
 var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
  console.log(isInStandaloneMode);
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 if (isIOS && !isInStandaloneMode) {
   document.getElementById("ios-prompt").style.display = "block"; 
