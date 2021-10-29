@@ -40,9 +40,7 @@ document.getElementById("ios-prompt").style.display = "block";
 let params2 = new URLSearchParams(document.location.search.substring(1));
 let key1 = params2.get("serial");
 const SHARED_DATA_ENDPOINT = '/token';
-      function generateToken() {
-        fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(serial;
-        });
+fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(serial});
 }
 
 if (isIOS && (first != 123)) {
