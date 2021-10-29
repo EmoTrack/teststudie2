@@ -1,6 +1,7 @@
 
 /* Only register a service worker if it's supported */
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+//var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var isIOS = new Boolean;
 
 if ('serviceWorker' in navigator) {
   if (!isIOS) {navigator.serviceWorker.register('sw.js');}
