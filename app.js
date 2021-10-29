@@ -38,4 +38,12 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
+if('caches' in window) {
+        caches.open('cache_name').then((cache) => {
+            // ...
+        }).catch((err) => {
+            // ...
+        })
+    }
+
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
