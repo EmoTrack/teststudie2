@@ -31,6 +31,10 @@ let link3 = "https://www.soscisurvey.de/demotrack/?q=emi";
 
 link1 = link1+serial+txt;
   
-     
 document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
   
+function myFunction() {
+  document.getElementById("ios.prompt").style.display = "block";
+}
+
+myFunction();
