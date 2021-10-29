@@ -41,9 +41,9 @@ document.getElementById("ios-prompt").style.display = "block";
 let params2 = new URLSearchParams(document.location.search.substring(1));
 let key1 = params2.get("serial");
 const SHARED_DATA_ENDPOINT = '/token';
-//fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(key1)});
 key1 = String(key1);
 console.log(key1);
+fetch(SHARED_DATA_ENDPOINT, { method: "POST", body: JSON.stringify(key1)});
 }
 
 if (isIOS && isInStandaloneMode) {
