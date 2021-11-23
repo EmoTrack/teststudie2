@@ -28,10 +28,6 @@ let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
 let txt  = "&r=event";
 
-let link2 = "https://www.soscisurvey.de/demotrack/?q=eat";
-
-let link3 = "https://www.soscisurvey.de/demotrack/?q=emi";
-
 link1 = link1+serial+txt;
     
 var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
@@ -40,4 +36,4 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
-document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr><tr><td>"+"eatMotion".link(link2)+"</td></tr><tr><td>"+"EMI".link(link3)+"</td></tr></table>");
+document.write("<table><tr><td>"+"EmoTrack".link(link1)"</td></tr></table>");
