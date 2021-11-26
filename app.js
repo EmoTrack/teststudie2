@@ -45,7 +45,7 @@ let serial = localStorage.getItem('serial');
 serial = String(serial); 
 link = link+serial;
 //window.location.href = link;
-document.write("<table><tr><td>"+"link+"</td></tr></table>");
+document.write("<p>"+link+"</p>");
 }
 
 console.log (first);
