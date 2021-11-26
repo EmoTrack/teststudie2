@@ -1,5 +1,8 @@
 /* Only register a service worker if it's supported */
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var isFirefox = /firefox|fxios/.test(navigator.userAgent);
+console.log(isIOS);
+console.log(isFirefox);
 
 if ('serviceWorker' in navigator) {
 navigator.serviceWorker.register('sw.js');
@@ -23,6 +26,10 @@ fun2();
 
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
+}
+
+if (isFirefox && (first == 123)) {
+document.getElementById("firefox-prompt").style.display = "block";
 }
 
 if (first == 123) {
