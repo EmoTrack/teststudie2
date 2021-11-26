@@ -30,8 +30,8 @@ let params1 = new URLSearchParams(document.location.search.substring(1));
 let key = params1.get("d"); 
 localStorage.setItem('serial', key);
 console.log(key);
-//link = link+key;
-//document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
+link = link+key;
+document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr><tr><td>");
 }
 
 if (first == 987) {
