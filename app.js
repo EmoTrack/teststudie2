@@ -45,7 +45,7 @@ let serial = localStorage.getItem('serial');
 serial = String(serial); 
 link = link+serial;
 //window.location.href = link;
-document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
+document.write("<table><tr><td>"+"link+"</td></tr></table>");
 }
 
 console.log (first);
