@@ -27,8 +27,9 @@ document.getElementById("ios-prompt").style.display = "block";
 
 if (first == 567) {
 fun1();
-link = link+key;
-document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
+console.log(key);
+//link = link+key;
+//document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
 }
 
 if (first == 987) {
@@ -37,4 +38,4 @@ serial = String(serial);
 //window.location.href = "http://www.w3schools.com";
 }
 
-log (first);
+console.log (first);
