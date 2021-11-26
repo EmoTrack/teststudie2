@@ -59,5 +59,11 @@ html,
     display: none;
     font-size: 20px;
       }
+#firefox-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+      }
 
 
