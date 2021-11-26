@@ -31,7 +31,7 @@ let key = params1.get("d");
 localStorage.setItem('serial', key);
 console.log(key);
 link = link+key;
-document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr><tr><td>");
+document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
 }
 
 if (first == 987) {
