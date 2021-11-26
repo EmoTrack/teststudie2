@@ -6,8 +6,7 @@ navigator.serviceWorker.register('sw.js');
 
 }
 let first = 987;
-let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
-
+//let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 let key = params1.get("d"); 
@@ -40,10 +39,13 @@ document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></tabl
 }
 
 if (first == 987) {
+key= 123;
+localStorage.setItem('serial', key);
 let serial = localStorage.getItem('serial');
 serial = String(serial); 
 link = link+serial;
-window.location.href = link;
+//window.location.href = link;
+document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
 }
 
 console.log (first);
