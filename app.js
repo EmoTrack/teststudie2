@@ -34,7 +34,7 @@ document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
 if (first == 987) {
 let serial = localStorage.getItem('serial');
 serial = String(serial); 
-window.location.href = "http://www.w3schools.com";
+//window.location.href = "http://www.w3schools.com";
 }
 
 log (first);
