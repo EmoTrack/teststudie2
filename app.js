@@ -42,13 +42,13 @@ link = link+key;
 document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
 }
 
-if (first == 987) {
+if (isNaN(first)) {
 key= 123;
 localStorage.setItem('serial', key);
 let serial = localStorage.getItem('serial');
 serial = String(serial); 
 //window.location.href = link;
-document.write("<p>"+key+"</p>");
+document.write("<p>"+serial+"</p>");
 }
 
 console.log (first);
