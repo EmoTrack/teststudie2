@@ -1,6 +1,3 @@
-
-
-
 /* Only register a service worker if it's supported */
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
@@ -8,33 +5,33 @@ if ('serviceWorker' in navigator) {
 navigator.serviceWorker.register('sw.js');
 
 }
+let first = 789;
 
-let params = new URLSearchParams(document.location.search.substring(1));
-let first = parseInt(params.get("first"), 10);
-
-function fun() {
-  
+function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
-let key = params1.get("serial"); 
+let key = params1.get("d"); 
 localStorage.setItem('serial', key);
 }
 
-if (first == 123) fun();
+function fun2() {
+let params = new URLSearchParams(document.location.search.substring(1));
+let first = parseInt(params.get("first"), 10);
+}
 
-let serial = localStorage.getItem('serial');
-serial = String(serial);
-
-let link1 = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
-
-let txt  = "&r=event";
-
-link1 = link1+serial+txt;
-    
-var isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator.standalone);
+fun2();
 
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
-document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr></table>");
-     
+if (first == 567)) {
+fun1();
+}
+
+if (first == 987)) {
+window.location.href = "http://www.w3schools.com";
+}
+
+log (first);
+let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
+link = link+serial;     
