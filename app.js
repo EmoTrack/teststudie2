@@ -25,6 +25,11 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
+if (first == 123) {
+document.getElementById("android-prompt").style.display = "block";
+}
+
+
 if (first == 567) {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 let key = params1.get("d"); 
