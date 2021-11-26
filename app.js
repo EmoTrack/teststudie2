@@ -36,4 +36,5 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
-document.write("<table><tr><td>"+"EmoTrack".link(link1)"+"</td></tr></table>");
+document.write("<table><tr><td>"+"EmoTrack".link(link1)+"</td></tr></table>");
+     
