@@ -16,7 +16,7 @@ localStorage.setItem('serial', key);
 
 function fun2() {
 let params = new URLSearchParams(document.location.search.substring(1));
-let first = parseInt(params.get("first"), 10);
+first = parseInt(params.get("first"), 10);
 }
 
 fun2();
