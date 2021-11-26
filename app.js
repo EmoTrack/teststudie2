@@ -5,7 +5,8 @@ if ('serviceWorker' in navigator) {
 navigator.serviceWorker.register('sw.js');
 
 }
-let first = 789;
+let first = 987;
+let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
@@ -26,6 +27,8 @@ document.getElementById("ios-prompt").style.display = "block";
 
 if (first == 567)) {
 fun1();
+link = link+key;
+document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
 }
 
 if (first == 987)) {
@@ -33,5 +36,3 @@ window.location.href = "http://www.w3schools.com";
 }
 
 log (first);
-let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
-link = link+serial;     
