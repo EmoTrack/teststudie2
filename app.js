@@ -43,9 +43,8 @@ key= 123;
 localStorage.setItem('serial', key);
 let serial = localStorage.getItem('serial');
 serial = String(serial); 
-link = link+serial;
 //window.location.href = link;
-document.write("<p>"+link+"</p>");
+document.write("<p>"+key+"</p>");
 }
 
 console.log (first);
