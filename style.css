@@ -51,11 +51,13 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
+    font-size: 12px;
       }
 #android-prompt {
     color: #FFFFFF;
     text-align: center;
     display: none;
+    font-size: 20px;
       }
 
 
