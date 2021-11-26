@@ -6,9 +6,6 @@ navigator.serviceWorker.register('sw.js');
 
 }
 
-let first = 987;
-console.log(first);
-
 //let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
 
 function fun1() {
