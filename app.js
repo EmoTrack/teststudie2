@@ -25,13 +25,13 @@ if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 }
 
-if (first == 567)) {
+if (first == 567) {
 fun1();
 link = link+key;
 document.write("<table><tr><td>"+"EmoTrack".link(link)+"</td></tr><tr><td>");
 }
 
-if (first == 987)) {
+if (first == 987) {
 let serial = localStorage.getItem('serial');
 serial = String(serial); 
 window.location.href = "http://www.w3schools.com";
