@@ -44,17 +44,14 @@ fun2();
 
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "none";
 }
 
 if (isFirefox && (first == 123)) {
 document.getElementById("firefox-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "none";
 }
 
 if (first == 123) {
 document.getElementById("android-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "none";
 }
 
 if (first == 666) {
@@ -63,23 +60,18 @@ if (first == 666) {
  
 if (first == 42) {
   document.getElementById("end").style.display = "block";
-  document.getElementById("eingabefeld").style.display = "none";
   timer();
 }
     
-if (isNaN(first)) {
 let serial = localStorage.getItem('serial');
 
 if (isNaN(serial)){
-let time1 = Date.now();
-let time0 = localStorage.getItem('time');
-
-if ((time1 - time0) > 2500){
-document.getElementById("eingabefeld").style.display = "none";
+document.getElementById("eingabefeld").style.display = "block";
+}
+else
+{
 check = String(serial); 
 let check_link = link+check;
 window.location.href = check_link;
-}
-
 }
 
