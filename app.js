@@ -3,7 +3,7 @@ var ua = navigator.userAgent;
 console.log(ua);
 
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var isFirefox = /Morzilla|fxios/.test(navigator.userAgent);
+var isFirefox = /Mozilla|firefox/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
 
@@ -38,14 +38,17 @@ fun2();
 
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
 }
 
 if (isFirefox && (first == 123)) {
 document.getElementById("firefox-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
 }
 
 if (first == 123) {
 document.getElementById("android-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
 }
 
 
