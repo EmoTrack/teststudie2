@@ -19,12 +19,6 @@ console.log(isFirefox);
 
 let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 
-function timer(){
-let time = Date.now();
-localStorage.setItem('time', time);
-//window.setTimeout(document.getElementById("end").style.display = "none";", 900000);
-}
-
 function sperre() {
 let time1 = Date.now();
 let time0 = localStorage.getItem('time');
@@ -32,6 +26,12 @@ if ((time1 - time0) < 900000){
 document.getElementById("end").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
+}
+
+function timer(){
+let time = Date.now();
+localStorage.setItem('time', time);
+window.setTimeout(sperre(), 900000);
 }
 
 function fun2() {
