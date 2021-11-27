@@ -19,14 +19,6 @@ console.log(isFirefox);
 
 let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 
-function sperre() {
-let time1 = Date.now();
-let time0 = localStorage.getItem('time');
-//if ((time1 - time0) < 2100){
-//document.getElementById("end").style.display = "block";
-//document.getElementById("eingabefeld").style.display = "none";
-//}
-}
 
 function timer(){
 let time = Date.now();
@@ -79,6 +71,10 @@ if (isNaN(first)) {
 let serial = localStorage.getItem('serial');
 
 if (isNaN(serial)){
+let time1 = Date.now();
+let time0 = localStorage.getItem('time');
+
+if ((time1 - time0) > 2500){
 document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
