@@ -36,7 +36,6 @@ if (first == 123) {
 document.getElementById("android-prompt").style.display = "block";
 }
 
-
 if (first == 567) {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 let key = params1.get("d"); 
@@ -47,12 +46,13 @@ document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></tabl
 }
 
 if (isNaN(first)) {
-key= 123;
-localStorage.setItem('serial', key);
 let serial = localStorage.getItem('serial');
-serial = String(serial); 
-//window.location.href = link;
-document.write("<p>"+serial+"</p>");
+
+if (!isNaN(serial)){
+document.getElementById("eingabefeld").style.display = "block";
+let token = document.querySelector("#token").value;
+
+}
 }
 
 console.log (first);
