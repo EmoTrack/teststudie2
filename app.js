@@ -21,8 +21,6 @@ if ((time1 - time0) > 15*60*100){
 window.location.href = 'token.html';}
 }
 
-sperre();
-
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 let key = params1.get("d"); 
@@ -65,6 +63,7 @@ if (first == 666) {
 }
 
 if (isNaN(first)) {
+sperre();
 let serial = localStorage.getItem('serial');
 
 if (isNaN(serial)){
