@@ -78,7 +78,7 @@ if (first == 42) {
 if (isNaN(first)) {
 let serial = localStorage.getItem('serial');
 
-if (!isNaN(serial)){
+if (isNaN(serial)){
 document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
