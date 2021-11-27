@@ -9,7 +9,7 @@ navigator.serviceWorker.register('sw.js');
 
 }
 
-let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event"
+let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
