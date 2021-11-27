@@ -11,18 +11,26 @@ if ('serviceWorker' in navigator) {
 }
 
 
+
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var isFirefox = /Mozilla|firefox/.test(navigator.userAgent);
+var isFirefox = /Mozilla/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
 
 let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 
+function timer(){
+let time = Date.now();
+localStorage.setItem('time', time);
+//window.setTimeout(document.getElementById("end").style.display = "none";", 900000);
+}
+
 function sperre() {
 let time1 = Date.now();
 let time0 = localStorage.getItem('time');
 if ((time1 - time0) < 900000){
-window.location.href = 'token.html';}
+document.getElementById("end").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
 }
 
 function fun1() {
@@ -65,7 +73,13 @@ document.getElementById("eingabefeld").style.display = "none";
 if (first == 666) {
   localStorage.removeItem('serial');
 }
+ 
+if (first == 42) {
+  timer();
+}
 
+  
+  
 if (isNaN(first)) {
 sperre();
 let serial = localStorage.getItem('serial');
@@ -79,5 +93,3 @@ window.location.href = check_link;
 
 }
 
-
-console.log (first);
