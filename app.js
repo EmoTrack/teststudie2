@@ -70,6 +70,8 @@ if (first == 666) {
 }
  
 if (first == 42) {
+  document.getElementById("end").style.display = "block";
+  document.getElementById("eingabefeld").style.display = "none";
   timer();
 }
     
