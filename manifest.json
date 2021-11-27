@@ -2,7 +2,7 @@
     "name": "EmoTrack",
     "short_name": "EmoTrack",
     "lang": "de-DE",
-    "start_url": "/",
+    "start_url": "index.html",
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#11B3A5",
