@@ -22,6 +22,12 @@ let params = new URLSearchParams(document.location.search.substring(1));
 first = parseInt(params.get("first"), 10);
 }
 
+function send{
+let token = document.querySelector("#token").value;
+document.write("<p>"+token+</p>");
+
+}
+
 fun2();
 
 if (isIOS && (first == 123)) {
@@ -45,14 +51,12 @@ link = link+key;
 document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
 }
 
-if (isNaN(first)) {
-let serial = localStorage.getItem('serial');
+//if (isNaN(first)) {
+//let serial = localStorage.getItem('serial');
 
-if (!isNaN(serial)){
-document.getElementById("eingabefeld").style.display = "block";
-let token = document.querySelector("#token").value;
-
-}
-}
+//if (!isNaN(serial)){
+//document.getElementById("eingabefeld").style.display = "block";
+//}
+//}
 
 console.log (first);
