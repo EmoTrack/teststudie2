@@ -24,7 +24,7 @@ first = parseInt(params.get("first"), 10);
 
 function send(){
 let token = document.querySelector("#token").value;
-document.write("<p>"+token+</p>");
+document.write("<p>"+token+"</p>");
 
 }
 
