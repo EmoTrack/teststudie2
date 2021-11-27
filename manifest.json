@@ -6,7 +6,7 @@
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#11B3A5",
-    "scope": "https://soscisurvey.de/",
+    "scope": "https://emotrack.github.io/",
     "icons": [
       {
         "src": "image.png",
