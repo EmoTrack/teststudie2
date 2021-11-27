@@ -1,16 +1,13 @@
-/* Only register a service worker if it's supported */
-var ua = navigator.userAgent;
-console.log(ua);
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('sw.js');
+
+}
+
 
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var isFirefox = /Mozilla|firefox/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
-
-if ('serviceWorker' in navigator) {
-navigator.serviceWorker.register('sw.js');
-
-}
 
 let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 
