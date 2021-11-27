@@ -66,4 +66,11 @@ html,
     font-size: 20px;
       }
 
+#end {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+      }
+
 
