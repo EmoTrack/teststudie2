@@ -31,7 +31,7 @@ document.getElementById("eingabefeld").style.display = "none";
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout(sperre(), 900000);
+window.setTimeout(sperre(), 2000);
 }
 
 function fun2() {
