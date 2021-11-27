@@ -25,7 +25,7 @@ let time0 = localStorage.getItem('time');
 //if ((time1 - time0) < 2100){
 //document.getElementById("end").style.display = "block";
 //document.getElementById("eingabefeld").style.display = "none";
-}
+//}
 }
 
 function timer(){
