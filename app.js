@@ -1,6 +1,9 @@
 /* Only register a service worker if it's supported */
+var ua = navigator.userAgent;
+console.log(ua);
+
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var isFirefox = /firefox|fxios/.test(navigator.userAgent);
+var isFirefox = /Morzilla|fxios/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
 
