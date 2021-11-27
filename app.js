@@ -79,7 +79,7 @@ if (isNaN(first)) {
 sperre();
 let serial = localStorage.getItem('serial');
 
-if (isNaN(serial)){
+if (!isNaN(serial)){
 document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
