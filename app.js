@@ -22,16 +22,16 @@ let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 function sperre() {
 let time1 = Date.now();
 let time0 = localStorage.getItem('time');
-if ((time1 - time0) < 2100){
-document.getElementById("end").style.display = "block";
-document.getElementById("eingabefeld").style.display = "none";
+//if ((time1 - time0) < 2100){
+//document.getElementById("end").style.display = "block";
+//document.getElementById("eingabefeld").style.display = "none";
 }
 }
 
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout("window.location.href='https://emotrack.github.io/EmoTrack/';", 2000);
+window.setTimeout("window.location.href='https://emotrack.github.io/EmoTrack/';", 90000);
 }
 
 function fun2() {
@@ -72,11 +72,8 @@ if (first == 666) {
 if (first == 42) {
   timer();
 }
-
-  
-  
+    
 if (isNaN(first)) {
-sperre();
 let serial = localStorage.getItem('serial');
 
 if (!isNaN(serial)){
