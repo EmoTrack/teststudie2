@@ -32,6 +32,7 @@ if ((time1 - time0) < 900000){
 document.getElementById("end").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
+}
 
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
