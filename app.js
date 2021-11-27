@@ -17,7 +17,7 @@ let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 function sperre() {
 let time1 = Date.now();
 let time0 = localStorage.getItem('time');
-if ((time1 - time0) < 15*60*100){
+if ((time1 - time0) < 900000){
 window.location.href = 'token.html';}
 }
 
