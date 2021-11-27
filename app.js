@@ -51,6 +51,9 @@ document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
 
+if (first == 666) {
+  localStorage.removeItem('serial');
+}
 
 if (isNaN(first)) {
 let serial = localStorage.getItem('serial');
