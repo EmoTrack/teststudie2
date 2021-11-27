@@ -9,7 +9,7 @@ navigator.serviceWorker.register('sw.js');
 
 }
 
-//let link = "https://www.soscisurvey.de/demotrack/?l=ger&d=";
+let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event"
 
 function fun1() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
@@ -24,6 +24,11 @@ first = parseInt(params.get("first"), 10);
 
 function send(){
 let token = document.querySelector("#token").value;
+console.log (token);
+localStorage.setItem('serial', token);
+check = String(token); 
+let check_link = link+check;
+window.location.href = check_link;
 }
 
 fun2();
@@ -40,21 +45,18 @@ if (first == 123) {
 document.getElementById("android-prompt").style.display = "block";
 }
 
-if (first == 567) {
-let params1 = new URLSearchParams(document.location.search.substring(1));
-let key = params1.get("d"); 
-localStorage.setItem('serial', key);
-console.log(key);
-link = link+key;
-document.write("<table><tr><td>"+"EmoTrack Starten".link(link)+"</td></tr></table>");
+
+if (isNaN(first)) {
+let serial = localStorage.getItem('serial');
+
+if (isNaN(serial)){
+document.getElementById("eingabefeld").style.display = "none";
+check = String(serial); 
+let check_link = link+check;
+window.location.href = check_link;
 }
 
-//if (isNaN(first)) {
-//let serial = localStorage.getItem('serial');
+}
 
-//if (!isNaN(serial)){
-//document.getElementById("eingabefeld").style.display = "block";
-//}
-//}
 
 console.log (first);
