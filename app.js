@@ -31,7 +31,7 @@ document.getElementById("eingabefeld").style.display = "none";
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout("window.location.href="https://emotrack.github.io/EmoTrack/", 2000);
+window.setTimeout("window.location.href="https://emotrack.github.io/EmoTrack/"", 2000);
 }
 
 function fun2() {
