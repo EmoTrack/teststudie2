@@ -22,7 +22,7 @@ let link = "https://www.soscisurvey.de/demotrack/?q=EMA_event&s="
 function sperre() {
 let time1 = Date.now();
 let time0 = localStorage.getItem('time');
-if ((time1 - time0) < 2000){
+if ((time1 - time0) < 2100){
 document.getElementById("end").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
@@ -31,7 +31,7 @@ document.getElementById("eingabefeld").style.display = "none";
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout(sperre(), 2000);
+window.setTimeout("window.location.href="https://emotrack.github.io/EmoTrack/", 2000);
 }
 
 function fun2() {
