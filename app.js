@@ -22,7 +22,7 @@ let params = new URLSearchParams(document.location.search.substring(1));
 first = parseInt(params.get("first"), 10);
 }
 
-function send{
+function send(){
 let token = document.querySelector("#token").value;
 document.write("<p>"+token+</p>");
 
