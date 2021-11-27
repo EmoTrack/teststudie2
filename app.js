@@ -34,12 +34,6 @@ document.getElementById("eingabefeld").style.display = "none";
 }
 }
 
-function fun1() {
-let params1 = new URLSearchParams(document.location.search.substring(1));
-let key = params1.get("d"); 
-localStorage.setItem('serial', key);
-}
-
 function fun2() {
 let params = new URLSearchParams(document.location.search.substring(1));
 first = parseInt(params.get("first"), 10);
