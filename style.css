@@ -65,12 +65,10 @@ html,
     display: none;
     font-size: 20px;
       }
-
 #end {
-    color: #FFFFFF;
-    text-align: center;
     display: none;
-    font-size: 20px;
       }
-
+#eingabefeld {
+    display: none;
+      }
 
