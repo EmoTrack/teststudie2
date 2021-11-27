@@ -66,7 +66,7 @@ if (first == 42) {
 let serial = localStorage.getItem('serial');
 
 
-if (serial == 0){
+if (serial == null){
 document.getElementById("eingabefeld").style.display = "block";
 }
 else
