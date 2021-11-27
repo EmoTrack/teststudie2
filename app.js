@@ -65,8 +65,8 @@ if (first == 42) {
     
 let serial = localStorage.getItem('serial');
 
-if (isNaN(first)){
-if (isNaN(serial)){
+
+if (serial == 0){
 document.getElementById("eingabefeld").style.display = "block";
 }
 else
@@ -75,4 +75,4 @@ check = String(serial);
 let check_link = link+check;
 window.location.href = check_link;
 }
-}
+
