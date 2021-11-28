@@ -1,6 +1,6 @@
            
 const CACHE_NAME = 'offline';
-const OFFLINE_URL = 'offline.html';
+const OFFLINE_URL = 'https://emotrack.github.io/EmoTrack/offline.html';
 const stringResponse = new Response('Hello world');
 
 self.addEventListener('install', function(event) {
