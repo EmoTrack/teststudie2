@@ -2,20 +2,20 @@
     "name": "EmoTrack",
     "short_name": "EmoTrack",
     "lang": "de-DE",
-    "start_url": "EmoTrack/index.html",
-     "id": "EmoTrack/index.html",
+    "start_url": "/",
+     "id": "/",
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#ffffff",
     "scope": "https://emotrack.github.io/",
     "icons": [
       {
-        "src": "/EmoTrack/image.png",
+        "src": "image.png",
         "sizes": "512x512",
         "type": "image\/png"
       },
         {
-        "src": "/EmoTrack/image.png",
+        "src": "image.png",
         "sizes": "192x192",
         "type": "image\/png"
       } 
