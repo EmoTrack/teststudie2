@@ -7,7 +7,7 @@
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#ffffff",
-    "scope": "https://emotrack.github.io/",
+    "scope": ".",
     "icons": [
       {
         "src": "image.png",
