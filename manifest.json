@@ -10,12 +10,12 @@
     "scope": "https://emotrack.github.io/",
     "icons": [
       {
-        "src": "image.png",
+        "src": "/EmoTrack/image.png",
         "sizes": "512x512",
         "type": "image\/png"
       },
         {
-        "src": "image.png",
+        "src": "/EmoTrack/image.png",
         "sizes": "192x192",
         "type": "image\/png"
       } 
