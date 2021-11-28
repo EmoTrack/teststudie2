@@ -2,12 +2,12 @@
     "name": "EmoTrack",
     "short_name": "EmoTrack",
     "lang": "de-DE",
-    "start_url": "index.html",
-     "id": "index.html",
+    "start_url": "EmoTrack/index.html",
+     "id": "/EmoTrack/index.html",
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#ffffff",
-    "scope": "https://emotrack.github.io/EmoTrack",
+    "scope": "https://emotrack.github.io/",
     "icons": [
       {
         "src": "image.png",
