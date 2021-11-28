@@ -2,10 +2,10 @@
     "name": "EmoTrack",
     "short_name": "EmoTrack",
     "lang": "de-DE",
-    "start_url": "index.html",
+    "start_url": "https://emotrack.github.io/EmoTrack/index.html",
     "display": "standalone",
-    "theme_color": "#11B3A5",
-    "background_color": "#11B3A5",
+    "theme_color": "##11B3A5",
+    "background_color": "#ffffff",
     "scope": "https://emotrack.github.io/",
     "icons": [
       {
