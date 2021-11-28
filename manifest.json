@@ -3,7 +3,7 @@
     "short_name": "EmoTrack",
     "lang": "de-DE",
     "start_url": "https://emotrack.github.io/EmoTrack/index.html",
-     id: "https://emotrack.github.io/EmoTrack/index.html",
+     "id": "https://emotrack.github.io/EmoTrack/index.html",
     "display": "standalone",
     "theme_color": "#11B3A5",
     "background_color": "#ffffff",
