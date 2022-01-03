@@ -73,11 +73,9 @@ document.getElementById("eingabefeld").style.display = "block";
 }
 else
 {
-if ((first != 42) && (first != 123)) {
 check = String(serial); 
 let check_link = link+check;
 window.location.href = check_link;
-}
 }
 
 if (isIOS && (first == 123)) {
