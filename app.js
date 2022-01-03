@@ -33,8 +33,9 @@ function send(){
 let token = document.querySelector("#token").value;
 console.log (token);
 localStorage.setItem('serial', token);
-check = String(token); 
-let check_link = link+check;
+check = String(token);
+let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s="
+let check_link = link1+check;
 window.location.href = check_link;
 }
 
