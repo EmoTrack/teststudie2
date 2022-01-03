@@ -81,14 +81,15 @@ window.location.href = check_link;
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "hidden";
+let v = 1;
 }
 
-if (isFirefox && (first == 123)) {
+if (isFirefox && (first == 123) && (v != 1)) {
 document.getElementById("firefox-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "hidden";
 }
 
-if (first == 123) {
+if (first == 123 && (v != 1)) {
 document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "hidden";
 }
