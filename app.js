@@ -34,6 +34,7 @@ let params1 = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params1.get("s"), 10);
 console.log(value);
 if(!isNaN(value)){
+document.getElementById("eingabefeld").style.display = "none";
 let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
 let check_link1 = link2+value;
 window.location.href = check_link1;
@@ -61,6 +62,7 @@ if (first == 666) {
 }
  
 if (first == 42) {
+  document.getElementById("eingabefeld").style.display = "none";
   document.getElementById("end").style.display = "block";
   timer();
 }
@@ -73,6 +75,7 @@ document.getElementById("eingabefeld").style.display = "block";
 }
 else
 {
+document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
 window.location.href = check_link;
