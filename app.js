@@ -90,6 +90,7 @@ v = 1;
 if (isFirefox && (first == 123) && (v != 1)) {
 document.getElementById("firefox-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "hidden";
+v = 1;
 }
 
 if (first == 123 && (v != 1)) {
