@@ -41,18 +41,6 @@ window.location.href = check_link;
 
 fun2();
 
-if (isIOS && (first == 123)) {
-document.getElementById("ios-prompt").style.display = "block";
-}
-
-if (isFirefox && (first == 123)) {
-document.getElementById("firefox-prompt").style.display = "block";
-}
-
-if (first == 123) {
-document.getElementById("android-prompt").style.display = "block";
-}
-
 if (first == 666) {
   localStorage.removeItem('serial');
   alert("Fehlerhafter Code");
@@ -66,7 +54,7 @@ if (first == 42) {
 let serial = localStorage.getItem('serial');
 
 
-if (serial == null && (first=!123) ){
+if (serial == null){
 document.getElementById("eingabefeld").style.display = "block";
 }
 else
@@ -76,4 +64,17 @@ let check_link = link+check;
 window.location.href = check_link;
 }
 
+if (isIOS && (first == 123)) {
+document.getElementById("ios-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "hidden";
+}
 
+if (isFirefox && (first == 123)) {
+document.getElementById("firefox-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "hidden";
+}
+
+if (first == 123) {
+document.getElementById("android-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "hidden";
+}
