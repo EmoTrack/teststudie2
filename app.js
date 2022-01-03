@@ -61,15 +61,8 @@ if (first == 666) {
   localStorage.removeItem('serial');
   alert("Fehlerhafter Code");
 }
- 
-if (first == 42) {
-  document.getElementById("eingabefeld").style.display = "none";
-  document.getElementById("end").style.display = "block";
-  timer();
-}
     
 let serial = localStorage.getItem('serial');
-
 
 if (serial == null){
 document.getElementById("eingabefeld").style.display = "block";
@@ -80,6 +73,12 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
 window.location.href = check_link;
+}
+
+if (first == 42) {
+  document.getElementById("eingabefeld").style.display = "none";
+  document.getElementById("end").style.display = "block";
+  timer();
 }
 
 if (isIOS && (first == 123)) {
