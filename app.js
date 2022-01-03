@@ -21,7 +21,7 @@ let link = "https://www.soscisurvey.de/emotrack2/?q=demo&s="
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout("window.location.href='https://emotrack.github.io/EmoTrack/';", 2000);
+window.setTimeout("window.location.href='https://emotrack.github.io/EmoTrack/';", 900000);
 }
 
 function fun2() {
