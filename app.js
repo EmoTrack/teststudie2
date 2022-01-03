@@ -55,6 +55,7 @@ document.getElementById("android-prompt").style.display = "block";
 
 if (first == 666) {
   localStorage.removeItem('serial');
+  alert("Fehlerhafter Code");
 }
  
 if (first == 42) {
