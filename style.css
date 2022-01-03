@@ -69,6 +69,6 @@ html,
     display: none;
       }
 #eingabefeld {
-    display: none;
+    display: block;
       }
 
