@@ -61,11 +61,28 @@ if (first == 666) {
   localStorage.removeItem('serial');
   alert("Fehlerhafter Code");
 }
-    
+
+if (isIOS && (first == 123)) {
+document.getElementById("ios-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
+v = 1;
+}
+
+if (isFirefox && (first == 123) && (v != 1)) {
+document.getElementById("firefox-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
+v = 1;
+}
+
+if (first == 123 && (v != 1)) {
+document.getElementById("android-prompt").style.display = "block";
+document.getElementById("eingabefeld").style.display = "none";
+}
+
 let serial = localStorage.getItem('serial');
 
 if (serial == null){
-document.getElementById("eingabefeld").style.display = "block";
+//nichts
 }
 else
 {
@@ -81,19 +98,3 @@ if (first == 42) {
   timer();
 }
 
-if (isIOS && (first == 123)) {
-document.getElementById("ios-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "hidden";
-v = 1;
-}
-
-if (isFirefox && (first == 123) && (v != 1)) {
-document.getElementById("firefox-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "hidden";
-v = 1;
-}
-
-if (first == 123 && (v != 1)) {
-document.getElementById("android-prompt").style.display = "block";
-document.getElementById("eingabefeld").style.display = "hidden";
-}
