@@ -32,7 +32,7 @@ first = parseInt(params.get("first"), 10);
 function fun3() {
 let params = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params.get("s"), 10);
-if(value != null){
+if(isNaN(value)){
 let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
 let check_link1 = link2+value;
 window.location.href = check_link1;
