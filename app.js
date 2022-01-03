@@ -33,6 +33,11 @@ function fun3() {
 let params = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params.get("s"), 10);
 alert(value);
+if(value != null){
+let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
+let check_link = link2+check;
+window.location.href = check_link;
+}
 }
 
 function send(){
@@ -46,6 +51,7 @@ window.location.href = check_link;
 }
 
 fun2();
+fun3();
 
 if (first == 666) {
   localStorage.removeItem('serial');
