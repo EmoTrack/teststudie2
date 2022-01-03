@@ -32,6 +32,7 @@ first = parseInt(params.get("first"), 10);
 function fun3() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params1.get("s"), 10);
+console.log(value);
 if(isNaN(value)){
 let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
 let check_link1 = link2+value;
@@ -51,6 +52,8 @@ window.location.href = check_link;
 
 fun2();
 fun3();
+
+console.log(first);
 
 if (first == 666) {
   localStorage.removeItem('serial');
