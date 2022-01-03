@@ -15,7 +15,7 @@ var isFirefox = /Mozilla/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
 
-let link = "https://www.soscisurvey.de/emotrack2/?q=demo&s="
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
 
 
 function timer(){
