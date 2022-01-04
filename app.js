@@ -55,12 +55,6 @@ fun3();
 fun2();
 console.log(first);
 
-if (first == 666) {
-  localStorage.removeItem('serial');
-  document.getElementById("eingabefeld").style.display = "block";
-  alert("Fehlerhafter Code");
-}
-
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
@@ -72,6 +66,12 @@ document.getElementById("eingabefeld").style.display = "none";
 } else {
 document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
+}
+
+if (first == 666) {
+  localStorage.removeItem('serial');
+  document.getElementById("eingabefeld").style.display = "block";
+  alert("Fehlerhafter Code");
 }
 
 let serial = localStorage.getItem('serial');
