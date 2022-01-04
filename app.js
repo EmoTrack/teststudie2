@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
 function refer() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
@@ -76,6 +76,7 @@ else
 if (isNaN(first)){
 document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
 window.location.href = check_link;
 }
