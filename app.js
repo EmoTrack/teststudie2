@@ -21,7 +21,7 @@ let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout("window.location.href='https://emotrack.github.io/';", 899999);
+window.setTimeout("window.location.href='https://emotrack.github.io/';", 89999999999);
 }
 
 function fun2() {
@@ -90,9 +90,5 @@ let check_link = link+check;
 window.location.href = check_link;
 }
 
-if (first == 42) {
-  document.getElementById("eingabefeld").style.display = "none";
-  document.getElementById("end").style.display = "block";
-  timer();
-}
+
 
