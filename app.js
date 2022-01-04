@@ -15,7 +15,7 @@ var isFirefox = /Mozilla/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
 
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
 
 function timer(){
@@ -46,9 +46,7 @@ let token = document.querySelector("#token").value;
 console.log (token);
 localStorage.setItem('serial', token);
 check = String(token);
-if (first == 123) {let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s="}
-  else{let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
-  }
+let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s=";
 let check_link = link1+check;
 window.location.href = check_link;
 }
