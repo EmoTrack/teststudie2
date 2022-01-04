@@ -14,7 +14,6 @@ var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var isFirefox = /Mozilla/.test(navigator.userAgent);
 console.log(isIOS);
 console.log(isFirefox);
-let v = 2;
 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
 
@@ -64,16 +63,13 @@ if (first == 666) {
 if (isIOS && (first == 123)) {
 document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
-v = 1;
 }
 
-if (isFirefox && (first == 123) && (v != 1)) {
+if (isFirefox && (first == 123) {
 document.getElementById("firefox-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 v = 1;
-}
-
-if (first == 123 && (v != 1)) {
+} else {
 document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
