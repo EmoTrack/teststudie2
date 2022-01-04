@@ -17,13 +17,6 @@ console.log(isFirefox);
 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
-
-function timer(){
-let time = Date.now();
-localStorage.setItem('time', time);
-window.setTimeout("window.location.href='https://emotrack.github.io/';", 8999999);
-}
-
 function fun2() {
 let params = new URLSearchParams(document.location.search.substring(1));
 first = parseInt(params.get("first"), 10);
