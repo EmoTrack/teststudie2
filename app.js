@@ -71,6 +71,7 @@ document.getElementById("eingabefeld").style.display = "none";
 if (first == 666) {
   localStorage.removeItem('serial');
   document.getElementById("eingabefeld").style.display = "block";
+  document.getElementById("android-prompt").style.display = "none";
   alert("Fehlerhafter Code");
 }
 
