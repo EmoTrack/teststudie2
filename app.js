@@ -65,10 +65,9 @@ document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
 
-if (isFirefox && (first == 123) {
+if (isFirefox && (first == 123)) {
 document.getElementById("firefox-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
-v = 1;
 } else {
 document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
