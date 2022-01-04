@@ -57,7 +57,7 @@ console.log(first);
 
 if (first == 666) {
   localStorage.removeItem('serial');
-  document.getElementById("eingabefeld").style.display = "block";}
+  document.getElementById("eingabefeld").style.display = "block";
   alert("Fehlerhafter Code");
 }
 
