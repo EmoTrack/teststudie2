@@ -21,7 +21,7 @@ let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 function timer(){
 let time = Date.now();
 localStorage.setItem('time', time);
-window.setTimeout("window.location.href='https://emotrack.github.io/';", 89999999999);
+window.setTimeout("window.location.href='https://emotrack.github.io/';", 8999999);
 }
 
 function fun2() {
@@ -84,10 +84,12 @@ if (isNaN(first)){
 }
 else
 {
+if (isNaN(first)){
 document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let check_link = link+check;
 window.location.href = check_link;
+}
 }
 
 
