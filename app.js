@@ -10,14 +10,15 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
+
 function refer() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params1.get("s"), 10);
 console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
-let link2 = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s="
-let check_link1 = link2+value;
+let check_link1 = link+value;
 window.location.href = check_link1;
 }
 }
