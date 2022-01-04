@@ -57,6 +57,7 @@ console.log(first);
 
 if (first == 666) {
   localStorage.removeItem('serial');
+  document.getElementById("eingabefeld").style.display = "block";}
   alert("Fehlerhafter Code");
 }
 
@@ -76,7 +77,9 @@ document.getElementById("eingabefeld").style.display = "none";
 let serial = localStorage.getItem('serial');
 
 if (serial == null){
-document.getElementById("eingabefeld").style.display = "block";}
+if (isNaN(first)){
+  document.getElementById("eingabefeld").style.display = "block";}
+}
 else
 {
 document.getElementById("eingabefeld").style.display = "none";
