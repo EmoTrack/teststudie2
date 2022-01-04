@@ -77,8 +77,7 @@ document.getElementById("eingabefeld").style.display = "none";
 let serial = localStorage.getItem('serial');
 
 if (serial == null){
-//nichts
-}
+document.getElementById("eingabefeld").style.display = "block";}
 else
 {
 document.getElementById("eingabefeld").style.display = "none";
