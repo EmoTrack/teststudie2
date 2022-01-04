@@ -52,9 +52,8 @@ let check_link = link1+check;
 window.location.href = check_link;
 }
 
-fun2();
 fun3();
-
+fun2();
 console.log(first);
 
 if (first == 666) {
