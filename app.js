@@ -63,7 +63,9 @@ document.getElementById("eingabefeld").style.display = "none";
 if (isFirefox && (first == 123)) {
 document.getElementById("firefox-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
-} else {
+}
+
+if (!isFirefox && (first == 123)) {
 document.getElementById("android-prompt").style.display = "block";
 document.getElementById("eingabefeld").style.display = "none";
 }
@@ -71,7 +73,6 @@ document.getElementById("eingabefeld").style.display = "none";
 if (first == 666) {
   localStorage.removeItem('serial');
   document.getElementById("eingabefeld").style.display = "block";
-  document.getElementById("android-prompt").style.display = "none";
   alert("Fehlerhafter Code");
 }
 
