@@ -24,28 +24,18 @@ window.location.href = check_link1;
 }
 refer();
 
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var isFirefox = /Mozilla/.test(navigator.userAgent);
-
 function install() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-    if (isIOS) {
     document.getElementById("ios-prompt").style.display = "block";
     document.getElementById("eingabefeld").style.display = "none";
-    }
-    if (isFirefox) {
     document.getElementById("firefox-prompt").style.display = "block";
-    document.getElementById("eingabefeld").style.display = "none";
-    }
-    if (!isFirefox) {
     document.getElementById("android-prompt").style.display = "block";
-    document.getElementById("eingabefeld").style.display = "none";
     }
-  }
+
 
   if (first == 666) {
     localStorage.removeItem('serial');
