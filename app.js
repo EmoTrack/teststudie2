@@ -1,3 +1,5 @@
+//Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -10,7 +12,12 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+
+//Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
+
+
+//Automatische Weiterleitung falls der Link ?s= inkludiert (bei den SMS-Benachrichtigungen ist das der Fall)
 
 function refer() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
@@ -24,6 +31,9 @@ window.location.href = check_link1;
 }
 refer();
 
+
+//Anleitung anzeigen zum Installieren der APP (dafür wird der Installationsapp mit ?first=123 markiert)
+
 function install() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
@@ -35,8 +45,8 @@ function install() {
     document.getElementById("firefox-prompt").style.display = "block";
     document.getElementById("android-prompt").style.display = "block";
     }
-
-
+//Wenn der eingegebene Code nciht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
+  
   if (first == 666) {
     localStorage.removeItem('serial');
     document.getElementById("eingabefeld").style.display = "block";
@@ -46,6 +56,8 @@ function install() {
 
 install();
 
+//Sendet den Code an Sosci
+
 function send(){
     let token = document.querySelector("#token").value;
     localStorage.setItem('serial', token);
@@ -54,8 +66,12 @@ function send(){
     let check_link = link1+check;
     window.location.href = check_link;
 }
-  
+ 
+//Läd Code aus dem lokalen Speicher
 let serial = localStorage.getItem('serial');
+
+
+//Falls ein Code geladen werden kann, wird automatisch zu Sosc weitergeleitet
 
 if (serial == null){
 if (isNaN(first)){
