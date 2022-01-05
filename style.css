@@ -51,19 +51,22 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 12px;
+    font-size: 22px;
+    width: 310px;
       }
 #android-prompt {
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 20px;
+    font-size: 22px;
+    width: 310px;
       }
 #firefox-prompt {
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 20px;
+    font-size: 22px;
+    width: 310px;
       }
 #end {
     display: none;
