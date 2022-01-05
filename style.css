@@ -52,21 +52,24 @@ html,
     text-align: center;
     display: none;
     font-size: 22px;
-    width: 310px;
+    width: 80%;
+    border-color: #FFFFFF;
       }
 #android-prompt {
     color: #FFFFFF;
     text-align: center;
     display: none;
     font-size: 22px;
-    width: 310px;
+    width: 80%;
+    border-color: #FFFFFF;
       }
 #firefox-prompt {
     color: #FFFFFF;
     text-align: center;
     display: none;
     font-size: 22px;
-    width: 310px;
+    width: 80%;
+    border-color: #FFFFFF;
       }
 #end {
     display: none;
