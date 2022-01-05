@@ -8,7 +8,7 @@ p {
   font-family: sans-serif;
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 24px;
 }
 
 a {
@@ -51,7 +51,7 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 22px;
+    font-size: 24px;
     border-color: #FFFFFF;
   border-style: solid;
       }
@@ -59,7 +59,7 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 22px;
+    font-size: 24px;
     border-color: #FFFFFF;
   border-style: solid;
       }
@@ -67,7 +67,7 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 22px;
+    font-size: 24px;
     border-style: solid;
     border-color: #FFFFFF;
       }
