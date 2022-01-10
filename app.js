@@ -12,10 +12,20 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+function iOS() {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
 
-
-if(isIOS) {alert('APPLE');}
+if(iOS()) {alert('APPLE');}
 
 
 //Link speichern
