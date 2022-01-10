@@ -1,16 +1,3 @@
-//Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
 
 function iOS() {
   return [
@@ -23,6 +10,23 @@ function iOS() {
   ].includes(navigator.platform)
   // iPad on iOS 13 detection
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
+//Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
+
+if(!iOS())
+{
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
 }
 
 //Link speichern
@@ -38,9 +42,7 @@ console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
-if(iOS()){window.load(check_link1, , '_blank');
-} else {
-window.location.href = check_link1;}
+window.location.href = check_link1;
 }
 }
 refer();
@@ -54,7 +56,7 @@ function install() {
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-    document.getElementById("ios-prompt").style.display = "block";
+  if (isIOS()){document.getElementById("ios-prompt").style.display = "block";}
     document.getElementById("eingabefeld").style.display = "none";
     document.getElementById("firefox-prompt").style.display = "block";
     document.getElementById("android-prompt").style.display = "block";
