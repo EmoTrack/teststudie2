@@ -41,7 +41,7 @@ if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
 if(iOS()){window.open(check_link1, '_blank'}
-  else{window.location.href = check_link1;}
+  else{ window.location.href = check_link1;}
 }
 }
 refer();
@@ -99,7 +99,9 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
-window.location.href = check_link;
+if(iOS()){window.open(check_link1, '_blank'}
+  else {
+window.location.href = check_link;}
 }
 }
 
