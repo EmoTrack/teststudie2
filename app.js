@@ -12,6 +12,11 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+
+if(isIOS) {alert('APPLE');}
+
 
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
