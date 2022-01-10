@@ -38,7 +38,9 @@ console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
-window.location.href = check_link1;
+if(iOS()){window.load(check_link1, , '_blank');
+} else {
+window.location.href = check_link1;}
 }
 }
 refer();
@@ -76,7 +78,7 @@ function send(){
     check = String(token);
     let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s=";
     let check_link = link1+check;
-  window.location.href = check_link;
+    window.location.href = check_link;
 }
  
 //Läd Code aus dem lokalen Speicher
@@ -96,7 +98,8 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
-window.location.href = check_link;
+if(iOS()){window.load(check_link, , '_blank');
+} else {window.location.href = check_link;}
 }
 }
 
