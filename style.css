@@ -36,7 +36,7 @@ td:hover {border:8px solid #FFFFFF;}
 html,
 .fullscreen {
   display: flex;
-  height: 80%;
+  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
