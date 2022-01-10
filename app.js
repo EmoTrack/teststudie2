@@ -56,7 +56,7 @@ function install() {
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-  if (isIOS()){document.getElementById("ios-prompt").style.display = "block";}
+  if (iOS()){document.getElementById("ios-prompt").style.display = "block";}
     document.getElementById("eingabefeld").style.display = "none";
     document.getElementById("firefox-prompt").style.display = "block";
     document.getElementById("android-prompt").style.display = "block";
