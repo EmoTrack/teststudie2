@@ -100,8 +100,7 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
-if(iOS()){window.load(check_link, , '_blank');
-} else {window.location.href = check_link;}
+window.location.href = check_link;
 }
 }
 
