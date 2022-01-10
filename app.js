@@ -25,9 +25,6 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
-if(iOS()) {alert('APPLE');}
-
-
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
@@ -41,7 +38,8 @@ console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
-window.location.href = check_link1;
+if(iOS()) {window.open(check_link1, '_blank');}
+  else{window.location.href = check_link1;}
 }
 }
 refer();
@@ -60,7 +58,7 @@ function install() {
     document.getElementById("firefox-prompt").style.display = "block";
     document.getElementById("android-prompt").style.display = "block";
     }
-//Wenn der eingegebene Code nciht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
+//Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
   
   if (first == 666) {
     localStorage.removeItem('serial');
@@ -79,7 +77,8 @@ function send(){
     check = String(token);
     let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s=";
     let check_link = link1+check;
-    window.location.href = check_link;
+  if(iOS()) {window.open(check_link, '_blank');}
+  else{window.location.href = check_link;}
 }
  
 //Läd Code aus dem lokalen Speicher
@@ -99,7 +98,8 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
-window.location.href = check_link;
+if(iOS()) {window.open(check_link, '_blank');}
+else{window.location.href = check_link;}
 }
 }
 
