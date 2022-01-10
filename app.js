@@ -58,8 +58,8 @@ function install() {
   if (first == 123){
   if (iOS()){document.getElementById("ios-prompt").style.display = "block";}
     document.getElementById("eingabefeld").style.display = "none";
-    document.getElementById("firefox-prompt").style.display = "block";
-    document.getElementById("android-prompt").style.display = "block";
+  if (!iOS()){document.getElementById("firefox-prompt").style.display = "block";}
+  if (!iOS()){document.getElementById("android-prompt").style.display = "block";}
     }
 //Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
   
