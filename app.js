@@ -40,7 +40,7 @@ console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
-if(iOS()){window.open(check_link1, '_blank'}
+if(iOS()){window.open(check_link1, '_blank');}
   else{ window.location.href = check_link1;}
 }
 }
@@ -99,7 +99,7 @@ document.getElementById("eingabefeld").style.display = "none";
 check = String(serial); 
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 let check_link = link+check;
-if(iOS()){window.open(check_link1, '_blank'}
+if(iOS()){window.open(check_link1, '_blank');}
   else {
 window.location.href = check_link;}
 }
