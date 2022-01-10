@@ -14,8 +14,6 @@ function iOS() {
 
 //Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
 
-if(!iOS())
-{
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -27,7 +25,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-}
+
 
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
@@ -42,7 +40,8 @@ console.log(value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
-window.location.href = check_link1;
+if(iOS()){window.open(check_link1, '_blank'}
+  else{window.location.href = check_link1;}
 }
 }
 refer();
