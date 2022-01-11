@@ -2,7 +2,6 @@
 body {
   background-color:#11B3A5;
   text-align: center;
-  -webkit-user-select: none;
 }
 
 p {
@@ -48,14 +47,6 @@ html,
   width: 100%;
 }
 
-#ios-prompt {
-    color: #FFFFFF;
-    text-align: center;
-    display: none;
-    font-size: 20px;
-    border-color: #FFFFFF;
-  border-style: solid;
-      }
 #android-prompt {
     color: #FFFFFF;
     text-align: center;
@@ -64,6 +55,7 @@ html,
     border-color: #FFFFFF;
   border-style: solid;
       }
+
 #firefox-prompt {
     color: #FFFFFF;
     text-align: center;
@@ -71,11 +63,5 @@ html,
     font-size: 20px;
     border-style: solid;
     border-color: #FFFFFF;
-      }
-#end {
-    display: none;
-      }
-#eingabefeld {
-    display: none;
       }
 
