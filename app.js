@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator) {
 function install() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
-  first = parseInt(params.get("first"), 10);
+  let first = parseInt(params.get("first"), 10);
   
   if (first == 123){
   document.getElementById("firefox-prompt").style.display = "block";
