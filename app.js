@@ -36,6 +36,8 @@ localStorage.setItem('serial', serial);
 
 save();
 
+Console.log()(serial);
+
 
 //Installationsprompt
 
