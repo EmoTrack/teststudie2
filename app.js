@@ -30,6 +30,8 @@ if(isNaN(serial)){
 serial = localStorage.getItem('serial');
 }  
 
+localStorage.setItem('serial', serial);
+  
 }
 
 save();
