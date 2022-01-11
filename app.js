@@ -12,34 +12,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-//Link speichern
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
-console.log(link);
-
-//Serial
-
-function save(){
-
-//aus SMS/Weiterleitungslink
-  
-let params1 = new URLSearchParams(document.location.search.substring(1));
-let serial = parseInt(params1.get("s"), 10);
-
-//aus lokalem Speicher
-
-if(isNaN(serial)){
-serial = localStorage.getItem('serial');
-}  
-
-localStorage.setItem('serial', serial);
-
-}
-
-save();
-
-console.log()(serial);
-
-
 //Installationsprompt
 
 function install() {
@@ -54,20 +26,34 @@ function install() {
 }
 install();
 
-//Automatische Weiterleitung falls der Link ?s= inkludiert (bei den SMS-Benachrichtigungen ist das der Fall)
 
-function refer() {
+function app(){
 
-if(first=!123){
-console.log(serial);
+//Link speichern
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
+console.log(link);
+
+//SERIAL
+//aus SMS/Weiterleitungslink
+  
+let params1 = new URLSearchParams(document.location.search.substring(1));
+let serial = parseInt(params1.get("s"), 10);
+
+//aus lokalem Speicher
+
+if(isNaN(serial)){
+serial = localStorage.getItem('serial');
+}  
+
+  localStorage.setItem('serial', serial);
+
 let sosci_link = link+serial;
 console.log(sosci_link);
 window.location.href = sosci_link;
+  
 }
-}
-refer();
- 
 
+if(first=!123){app()};
 
 
 
