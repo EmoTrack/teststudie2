@@ -14,6 +14,7 @@ if ('serviceWorker' in navigator) {
 
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
+console.log(link);
 
 //Serial
 
@@ -31,12 +32,12 @@ serial = localStorage.getItem('serial');
 }  
 
 localStorage.setItem('serial', serial);
-  
+
 }
 
 save();
 
-Console.log()(serial);
+console.log()(serial);
 
 
 //Installationsprompt
@@ -58,7 +59,9 @@ install();
 function refer() {
 
 if(first=!123){
+console.log(serial);
 let sosci_link = link+serial;
+console.log(sosci_link);
 window.location.href = sosci_link;
 }
 }
