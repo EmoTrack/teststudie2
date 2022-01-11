@@ -1,17 +1,3 @@
-
-function iOS() {
-  return [
-    'iPad Simulator',
-    'iPhone Simulator',
-    'iPod Simulator',
-    'iPad',
-    'iPhone',
-    'iPod'
-  ].includes(navigator.platform)
-  // iPad on iOS 13 detection
-  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-}
-
 //Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
 
 if ('serviceWorker' in navigator) {
@@ -37,6 +23,7 @@ function refer() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params1.get("s"), 10);
 console.log(value);
+ localStorage.setItem('serial', value);
 if(!isNaN(value)){
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
@@ -54,11 +41,11 @@ function install() {
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-  if (iOS()){document.getElementById("ios-prompt").style.display = "block";}
     document.getElementById("eingabefeld").style.display = "none";
-  if (!iOS()){document.getElementById("firefox-prompt").style.display = "block";}
-  if (!iOS()){document.getElementById("android-prompt").style.display = "block";}
+  document.getElementById("firefox-prompt").style.display = "block";
+  document.getElementById("android-prompt").style.display = "block";
     }
+  
 //Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
   
   if (first == 666) {
