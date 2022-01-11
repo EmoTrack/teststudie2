@@ -56,8 +56,8 @@ install();
 function refer() {
 
 if(first=!123){
-let check_link = link+serial;
-window.location.href = check_link;
+let sosci_link = link+serial;
+window.location.href = sosci_link;
 }
 }
 refer();
