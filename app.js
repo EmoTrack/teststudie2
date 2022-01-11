@@ -12,28 +12,30 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
+//Serial
 
-//Automatische Weiterleitung falls der Link ?s= inkludiert (bei den SMS-Benachrichtigungen ist das der Fall)
+function save(){
 
-function refer() {
+//aus SMS/Weiterleitungslink
+  
 let params1 = new URLSearchParams(document.location.search.substring(1));
-value = parseInt(params1.get("s"), 10);
-console.log(value);
-if(!isNaN(value)){
-localStorage.setItem('serial', value);
-document.getElementById("eingabefeld").style.display = "none";
-let check_link1 = link+value;
-window.location.href = check_link1;
+let serial = parseInt(params1.get("s"), 10);
+
+//aus lokalem Speicher
+
+if(isNaN(serial)){
+serial = localStorage.getItem('serial');
+}  
+
 }
-}
-refer();
+
+save();
 
 
-//Anleitung anzeigen zum Installieren der APP (dafür wird der Installationsapp mit ?first=123 markiert)
+//Installationsprompt
 
 function install() {
 
@@ -41,53 +43,24 @@ function install() {
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-    document.getElementById("eingabefeld").style.display = "none";
   document.getElementById("firefox-prompt").style.display = "block";
   document.getElementById("android-prompt").style.display = "block";
     }
-  
-//Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
-  
-  if (first == 666) {
-    localStorage.removeItem('serial');
-    document.getElementById("eingabefeld").style.display = "block";
-    alert("Fehlerhafter Code");
-  }
 }
-
 install();
 
-//Sendet den Code an Sosci
+//Automatische Weiterleitung falls der Link ?s= inkludiert (bei den SMS-Benachrichtigungen ist das der Fall)
 
-function send(){
-    let token = document.querySelector("#token").value;
-    localStorage.setItem('serial', token);
-    check = String(token);
-    let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s=";
-    let check_link = link1+check;
-    window.location.href = check_link;
-}
- 
-//Läd Code aus dem lokalen Speicher
-let serial = localStorage.getItem('serial');
+function refer() {
 
-
-//Falls ein Code geladen werden kann, wird automatisch zu Sosc weitergeleitet
-
-if (serial == null){
-if (isNaN(first)){
-  document.getElementById("eingabefeld").style.display = "block";}
-}
-else
-{
-if (isNaN(first)){
-document.getElementById("eingabefeld").style.display = "none";
-check = String(serial); 
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
-let check_link = link+check;
+if(first=!123){
+let check_link = link+serial;
 window.location.href = check_link;
 }
 }
+refer();
+ 
+
 
 
 
