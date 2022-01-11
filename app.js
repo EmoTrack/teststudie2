@@ -12,14 +12,17 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+let x= 42;
+
 //Installationsprompt
 
 function install() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
-  let first = parseInt(params.get("first"), 10);
+  first = parseInt(params.get("first"), 10);
   
   if (first == 123){
+  x=666;
   document.getElementById("firefox-prompt").style.display = "block";
   document.getElementById("android-prompt").style.display = "block";
     }
@@ -53,7 +56,7 @@ window.location.href = sosci_link;
   
 }
 
-if (first != 123) {
+if (x == 42) {
   app();
 }
 
