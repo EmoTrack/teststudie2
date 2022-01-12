@@ -19,7 +19,7 @@ let x= 42;
 function install() {
 
   let params = new URLSearchParams(document.location.search);
-  first = parseInt(params.get("first"), 10);
+  let first = params.get("first");
   
   if (first == 123){
   x=666;
@@ -39,8 +39,7 @@ console.log(link);
 //SERIAL
 //aus SMS/Weiterleitungslink
   
-let params1 = new URLSearchParams(document.location.search.substring(1));
-let serial = parseInt(params1.get("s"), 10);
+let serial = params.get("s")
 console.log(serial);
   
 //aus lokalem Speicher
