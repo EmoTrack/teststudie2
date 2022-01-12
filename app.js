@@ -1,4 +1,4 @@
-//Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
+//Service Worker installieren: Code aus dem WWW kopiert --> Macht App installierbar
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
