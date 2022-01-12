@@ -16,6 +16,7 @@ let x= 42;
 let params = new URLSearchParams(document.location.search);
 let first = params.get("first");
 let serial = params.get("s")
+console.log(serial);
 
 
 //Installationsprompt
