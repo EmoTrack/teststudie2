@@ -31,6 +31,7 @@ function install() {
   document.getElementById("firefox-prompt").style.display = "block";
   document.getElementById("android-prompt").style.display = "block";
   document.getElementById("samsung-prompt").style.display = "block";
+  document.getElementById("help").style.display = "block";
     }
 }
 install();
