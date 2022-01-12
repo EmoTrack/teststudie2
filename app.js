@@ -45,7 +45,7 @@ console.log(link);
     
 //aus lokalem Speicher
 
-if(serial==null)){
+if(serial==null){
 serial = localStorage.getItem('serial');
 }  
 console.log(serial);
