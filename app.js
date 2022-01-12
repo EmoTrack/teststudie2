@@ -70,4 +70,4 @@ console.log(serial);
 let sosci_link = link+serial;
 console.log(sosci_link);
 if (x == 42) {window.location.href = sosci_link;}
-
+}
