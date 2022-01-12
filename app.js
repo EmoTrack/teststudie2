@@ -44,7 +44,7 @@ console.log(link);
     
 //aus lokalem Speicher
 
-if(isNaN(serial)){
+if(serial==null)){
 serial = localStorage.getItem('serial');
 }  
 console.log(serial);
