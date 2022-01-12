@@ -51,7 +51,7 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 20px;
+    font-size: 16px;
     border-color: #FFFFFF;
   border-style: solid;
       }
@@ -60,7 +60,16 @@ html,
     color: #FFFFFF;
     text-align: center;
     display: none;
-    font-size: 20px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #FFFFFF;
+      }
+
+#samsung-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 16px;
     border-style: solid;
     border-color: #FFFFFF;
       }
