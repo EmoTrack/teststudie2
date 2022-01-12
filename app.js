@@ -52,13 +52,10 @@ serial = localStorage.getItem('serial');
 
 let sosci_link = link+serial;
 console.log(sosci_link);
-window.location.href = sosci_link;
+if (x == 42) {window.location.href = sosci_link;}
   
 }
-
-if (x == 42) {
-  app();
-}
+app();
 
 
 
