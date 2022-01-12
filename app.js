@@ -18,7 +18,7 @@ let x= 42;
 
 function install() {
 
-  let params = new URLSearchParams(document.location.search.substring(1));
+  let params = new URLSearchParams(document.location.search);
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
