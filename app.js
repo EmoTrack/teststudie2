@@ -16,6 +16,7 @@ let x= 42;
 let params = new URLSearchParams(document.location.search);
 let first = params.get("first");
 let serial = params.get("s")
+let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 console.log(serial);
 
 
@@ -36,14 +37,9 @@ install();
 
 
 function app(){
-
-//Link speichern
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
-console.log(link);
-
+  
 //SERIAL
 //aus SMS/Weiterleitungslink
-    
 //aus lokalem Speicher
 
 if(serial==null){
@@ -61,6 +57,17 @@ if (x == 42) {window.location.href = sosci_link;}
 }
 app();
 
+function done(){
+  
+if(serial==null){
+serial = localStorage.getItem('serial');
+}  
+console.log(serial);
 
+localStorage.setItem('serial', serial);
+console.log(serial);
 
+let sosci_link = link+serial;
+console.log(sosci_link);
+if (x == 42) {window.location.href = sosci_link;}
 
