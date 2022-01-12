@@ -87,3 +87,6 @@ html,
     border-color: #FFFFFF;
       }
 
+  #help {
+    display: none;
+      }
