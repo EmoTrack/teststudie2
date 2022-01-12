@@ -13,13 +13,16 @@ if ('serviceWorker' in navigator) {
 }
 
 let x= 42;
+let params = new URLSearchParams(document.location.search);
+let first = params.get("first");
+let serial = params.get("s")
+
 
 //Installationsprompt
 
 function install() {
 
-  let params = new URLSearchParams(document.location.search);
-  let first = params.get("first");
+
   
   if (first == 123){
   x=666;
@@ -38,10 +41,7 @@ console.log(link);
 
 //SERIAL
 //aus SMS/Weiterleitungslink
-  
-let serial = params.get("s")
-console.log(serial);
-  
+    
 //aus lokalem Speicher
 
 if(isNaN(serial)){
