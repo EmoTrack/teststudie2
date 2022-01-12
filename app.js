@@ -29,6 +29,7 @@ function install() {
   x=666;
   document.getElementById("firefox-prompt").style.display = "block";
   document.getElementById("android-prompt").style.display = "block";
+  document.getElementById("samsung-prompt").style.display = "block";
     }
 }
 install();
