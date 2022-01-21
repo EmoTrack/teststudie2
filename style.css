@@ -67,7 +67,8 @@ html,
     display: none;
     font-size: 16px;
     border-color: #FFFFFF;
-  border-style: solid;
+    border-style: solid;
+    width: 90%;
       }
 
 #firefox-prompt {
@@ -77,6 +78,7 @@ html,
     font-size: 16px;
     border-style: solid;
     border-color: #FFFFFF;
+    width: 90%;
       }
 
 #samsung-prompt {
@@ -86,6 +88,7 @@ html,
     font-size: 16px;
     border-style: solid;
     border-color: #FFFFFF;
+    width: 90%;
       }
 
   #help {
